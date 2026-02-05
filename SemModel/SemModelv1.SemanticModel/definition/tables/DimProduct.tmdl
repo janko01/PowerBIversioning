@@ -1,0 +1,207 @@
+table DimProduct
+	lineageTag: 4365952e-741d-4cfd-8b48-8f192f931151
+
+	column ProductKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 2c5bffc4-e6da-4e4f-a273-ff031516d6f8
+		summarizeBy: none
+		sourceColumn: ProductKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductName
+		dataType: string
+		lineageTag: c5376725-dd72-4005-b9b5-0b64e9987745
+		summarizeBy: none
+		sourceColumn: ProductName
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductDescription
+		dataType: string
+		lineageTag: 0595f269-c70b-4a1a-86bb-c296e421577c
+		summarizeBy: none
+		sourceColumn: ProductDescription
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductSubcategoryKey
+		dataType: int64
+		formatString: 0
+		lineageTag: a46b6783-cf22-48bc-85c9-9500747859f6
+		summarizeBy: none
+		sourceColumn: ProductSubcategoryKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column Manufacturer
+		dataType: string
+		lineageTag: f9287c89-a349-4f37-8c38-ee4a03cf4b53
+		summarizeBy: none
+		sourceColumn: Manufacturer
+
+		annotation SummarizationSetBy = Automatic
+
+	column BrandName
+		dataType: string
+		lineageTag: 4fd28174-6180-4a98-9ba9-2609da51de3d
+		summarizeBy: none
+		sourceColumn: BrandName
+
+		annotation SummarizationSetBy = Automatic
+
+	column ClassID
+		dataType: int64
+		formatString: 0
+		lineageTag: 673d2b36-d4f2-4736-b761-f72f1cddfc53
+		summarizeBy: none
+		sourceColumn: ClassID
+
+		annotation SummarizationSetBy = Automatic
+
+	column ClassName
+		dataType: string
+		lineageTag: ee6d64ec-eb1d-4943-a5eb-a2d6e36a5edd
+		summarizeBy: none
+		sourceColumn: ClassName
+
+		annotation SummarizationSetBy = Automatic
+
+	column StyleID
+		dataType: int64
+		formatString: 0
+		lineageTag: db0fe8f8-a6c7-41f5-bc21-73b01527b45d
+		summarizeBy: none
+		sourceColumn: StyleID
+
+		annotation SummarizationSetBy = Automatic
+
+	column StyleName
+		dataType: string
+		lineageTag: 7b762f6d-1f1c-48f8-afca-e430d17dd9b8
+		summarizeBy: none
+		sourceColumn: StyleName
+
+		annotation SummarizationSetBy = Automatic
+
+	column ColorID
+		dataType: int64
+		formatString: 0
+		lineageTag: 1b383f3d-78d9-4ad2-9708-486812e523bb
+		summarizeBy: none
+		sourceColumn: ColorID
+
+		annotation SummarizationSetBy = Automatic
+
+	column ColorName
+		dataType: string
+		lineageTag: 4bc44513-7b1d-4f07-bec1-3c4ffe300ada
+		summarizeBy: none
+		sourceColumn: ColorName
+
+		annotation SummarizationSetBy = Automatic
+
+	column Weight
+		dataType: double
+		lineageTag: e3baf65c-a0b8-48e6-8b7c-482566926b09
+		summarizeBy: none
+		sourceColumn: Weight
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column WeightUnitMeasureID
+		dataType: string
+		lineageTag: f190da18-9e52-4904-a7a7-c4bad11582c4
+		summarizeBy: none
+		sourceColumn: WeightUnitMeasureID
+
+		annotation SummarizationSetBy = Automatic
+
+	column UnitOfMeasureID
+		dataType: int64
+		formatString: 0
+		lineageTag: 5bd28865-c356-4f0d-8e4e-2131a69ad101
+		summarizeBy: none
+		sourceColumn: UnitOfMeasureID
+
+		annotation SummarizationSetBy = Automatic
+
+	column UnitOfMeasureName
+		dataType: string
+		lineageTag: 111dee64-92bb-44ba-8942-090a5fa2487b
+		summarizeBy: none
+		sourceColumn: UnitOfMeasureName
+
+		annotation SummarizationSetBy = Automatic
+
+	column StockTypeID
+		dataType: int64
+		formatString: 0
+		lineageTag: 33bf39da-495a-456a-9345-65530b11893f
+		summarizeBy: none
+		sourceColumn: StockTypeID
+
+		annotation SummarizationSetBy = Automatic
+
+	column StockTypeName
+		dataType: string
+		lineageTag: 582544aa-7f6c-4b48-bca4-51cc6c59d234
+		summarizeBy: none
+		sourceColumn: StockTypeName
+
+		annotation SummarizationSetBy = Automatic
+
+	column UnitCost
+		dataType: double
+		lineageTag: 2d5359e9-3850-4ab9-aa4f-0ae14474c532
+		summarizeBy: none
+		sourceColumn: UnitCost
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column UnitPrice
+		dataType: double
+		lineageTag: 89169beb-a85f-44b5-84b2-ae884f312179
+		summarizeBy: none
+		sourceColumn: UnitPrice
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column AvailableForSaleDate
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: e73e442e-dde7-46d8-8857-2fa1a6f91302
+		summarizeBy: none
+		sourceColumn: AvailableForSaleDate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Status
+		dataType: string
+		lineageTag: 80be48af-c048-493c-9582-82e89a78d9b8
+		summarizeBy: none
+		sourceColumn: Status
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimProduct = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\jzivaljevic\OneDrive - ENDAVA\Desktop\KrisPOCversioning\data\DimProduct.csv"),[Delimiter=",", Columns=22, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"ProductKey", Int64.Type}, {"ProductName", type text}, {"ProductDescription", type text}, {"ProductSubcategoryKey", Int64.Type}, {"Manufacturer", type text}, {"BrandName", type text}, {"ClassID", Int64.Type}, {"ClassName", type text}, {"StyleID", Int64.Type}, {"StyleName", type text}, {"ColorID", Int64.Type}, {"ColorName", type text}, {"Weight", type number}, {"WeightUnitMeasureID", type text}, {"UnitOfMeasureID", Int64.Type}, {"UnitOfMeasureName", type text}, {"StockTypeID", Int64.Type}, {"StockTypeName", type text}, {"UnitCost", type number}, {"UnitPrice", type number}, {"AvailableForSaleDate", type date}, {"Status", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

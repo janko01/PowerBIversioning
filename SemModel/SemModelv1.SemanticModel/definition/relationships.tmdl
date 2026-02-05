@@ -1,0 +1,8 @@
+relationship ca326a06-2162-e272-4754-49f83f10c940
+	fromColumn: FactSales.DateKey
+	toColumn: DimDate.DateKey
+
+relationship AutoDetected_54d0afda-1817-4524-85af-183a468dc5bd
+	fromColumn: FactSales.ProductKey
+	toColumn: DimProduct.ProductKey
+
