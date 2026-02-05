@@ -5,13 +5,13 @@
       "ordinal": 0,
       "scrollPosition": {
         "x": 0,
-        "y": 0
+        "y": 75
       },
       "nodes": [
         {
           "location": {
             "x": 580,
-            "y": 430.875
+            "y": 504.15625
           },
           "nodeIndex": "DimDate",
           "nodeLineageTag": "a5292b7f-0271-4254-a5a3-1e2a1d3fe4ff",
@@ -19,12 +19,12 @@
             "height": 383,
             "width": 234
           },
-          "zIndex": 1
+          "zIndex": 2
         },
         {
           "location": {
-            "x": 238,
-            "y": 140.875
+            "x": 266,
+            "y": 235.15625
           },
           "nodeIndex": "FactSales",
           "nodeLineageTag": "4f7e1c18-56bf-4681-89cb-11b72af39268",
@@ -32,12 +32,12 @@
             "height": 504,
             "width": 234
           },
-          "zIndex": 2
+          "zIndex": 3
         },
         {
           "location": {
             "x": 588,
-            "y": 58.625
+            "y": 131.90625
           },
           "nodeIndex": "DimProduct",
           "nodeLineageTag": "4365952e-741d-4cfd-8b48-8f192f931151",
@@ -45,7 +45,20 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 2,
+            "y": 39.59375
+          },
+          "nodeIndex": "MeasuresForAgilent",
+          "nodeLineageTag": "7a83421b-ce86-4d34-9477-73ec153dbe4f",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 4
         }
       ],
       "name": "All tables",
