@@ -1,0 +1,24 @@
+table MeasuresForAgilent
+	lineageTag: 7a83421b-ce86-4d34-9477-73ec153dbe4f
+
+	measure TempMeasure = DISTINCTCOUNT(FactSales[TotalCost])
+		formatString: 0
+		lineageTag: 4fc880bc-4ce4-493c-9d43-07d41badf576
+
+	column Column
+		formatString: 0
+		lineageTag: a25f17bf-3bd4-422b-ac9a-dd580863562a
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Column]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition MeasuresForAgilent = calculated
+		mode: import
+		source = Row("Column", BLANK())
+
+	annotation PBI_Id = fe7288e938c145f48605d198e2801ed8
+
+	annotation 436ba87b-9c83-4389-a31b-ebd06a36be98 = {"Expression":""}
+

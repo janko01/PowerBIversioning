@@ -15,6 +15,7 @@ annotation PBI_ProTooling = ["DevMode"]
 ref table DimDate
 ref table FactSales
 ref table DimProduct
+ref table MeasuresForAgilent
 
 ref cultureInfo en-US
 
