@@ -6,3 +6,7 @@ relationship AutoDetected_54d0afda-1817-4524-85af-183a468dc5bd
 	fromColumn: FactSales.ProductKey
 	toColumn: DimProduct.ProductKey
 
+relationship AutoDetected_ca12fe9b-f0f2-4e03-864e-1e2e7036d2db
+	fromColumn: FactSales.CurrencyKey
+	toColumn: DimCurrency.CurrencyKey
+

@@ -61,7 +61,7 @@ table FactSales
 		dataType: int64
 		formatString: 0
 		lineageTag: e449d266-5f29-4d86-8734-d4b814cf7eb0
-		summarizeBy: count
+		summarizeBy: none
 		sourceColumn: CurrencyKey
 
 		annotation SummarizationSetBy = Automatic

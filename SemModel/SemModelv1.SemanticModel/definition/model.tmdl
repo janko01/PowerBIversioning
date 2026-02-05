@@ -8,7 +8,7 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 0
 
-annotation PBI_QueryOrder = ["DimDate","FactSales","DimProduct"]
+annotation PBI_QueryOrder = ["DimDate","FactSales","DimProduct","DimCurrency"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
@@ -16,6 +16,7 @@ ref table DimDate
 ref table FactSales
 ref table DimProduct
 ref table MeasuresForAgilent
+ref table DimCurrency
 
 ref cultureInfo en-US
 
