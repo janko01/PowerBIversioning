@@ -5,6 +5,10 @@ table MeasuresForAgilent
 		formatString: 0
 		lineageTag: 4fc880bc-4ce4-493c-9d43-07d41badf576
 
+	measure testmEASURE = COUNT(DimDate[CalendarDayOfWeekLabel])
+		formatString: 0
+		lineageTag: 562e001e-31b3-4693-b074-e672eb4a5a85
+
 	column Column
 		formatString: 0
 		lineageTag: a25f17bf-3bd4-422b-ac9a-dd580863562a
