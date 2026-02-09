@@ -5,7 +5,7 @@
       "ordinal": 0,
       "scrollPosition": {
         "x": 0,
-        "y": 75
+        "y": 0
       },
       "nodes": [
         {
@@ -23,8 +23,8 @@
         },
         {
           "location": {
-            "x": 266,
-            "y": 235.15625
+            "x": 253.42979256912554,
+            "y": 260.29666486174887
           },
           "nodeIndex": "FactSales",
           "nodeLineageTag": "4f7e1c18-56bf-4681-89cb-11b72af39268",
@@ -49,8 +49,8 @@
         },
         {
           "location": {
-            "x": 2,
-            "y": 39.59375
+            "x": 115.13186687786983,
+            "y": 43.364812229262334
           },
           "nodeIndex": "MeasuresForAgilent",
           "nodeLineageTag": "7a83421b-ce86-4d34-9477-73ec153dbe4f",
@@ -62,7 +62,7 @@
         }
       ],
       "name": "All tables",
-      "zoomValue": 100,
+      "zoomValue": 79.553182037699813,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,
